@@ -1,8 +1,8 @@
-function fixed_point(g, p_0, tol, max_iter)
+function fixed_point(g::Function, p_0::Float64, tol::Float64, max_iter::Int64)
     p = p_0
     p_i=p_0
-    for i in 1:max_iter
-        p=g(o_i)
+    for i = 1:max_iter
+        p=g(p_i)
         if abs(p-p_i) < tol
             return p
         end
