@@ -7,7 +7,7 @@ function round_sum(x::Float64, y::Float64; digits::Int64)
     """
     x_till = round(x, digits = digits)
     y_till = round(y, digits = digits)
-    return round(x_till+y_till, digits = digits)
+    return round(x_till + y_till, digits = digits)
 
 end
 
@@ -18,7 +18,7 @@ function round_mul(x::Float64, y::Float64; digits::Int64)
     """
     x_till = round(x, digits = digits)
     y_till = round(y, digits = digits)
-    return round(x_till*y_till, digits = digits)
+    return round(x_till * y_till, digits = digits)
 end
 
 function trunc_sum(x::Float64, y::Float64; digits::Int64)
@@ -28,9 +28,9 @@ function trunc_sum(x::Float64, y::Float64; digits::Int64)
 
     hint: use "trunc" function.
     """
-   x_till=trunc(x, digits=digits)
-   y_till = trunc(y, digits=digits)
-   return x_till+y_till
+    x_till = trunc(x, digits = digits)
+    y_till = trunc(y, digits = digits)
+    return x_till + y_till
 end
 
 function trunc_mul(x::Float64, y::Float64; ddigits::Int64)
@@ -40,7 +40,7 @@ function trunc_mul(x::Float64, y::Float64; ddigits::Int64)
 
     hint: use "trunc" function.
     """
-    x_till=trunc(x, digits=digits)
-   y_till = trunc(y, digits=digits)
-   return trunc(x_till * y_till, digits=digits)
+    x_till = trunc(x, digits = digits)
+    y_till = trunc(y, digits = digits)
+    return trunc(x_till * y_till, digits = digits)
 end
