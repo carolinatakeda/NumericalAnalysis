@@ -4,11 +4,13 @@ using Integrals
 DIGITS = 10
 
 include("../src/Includes.jl")
+include("src/LinearAlgebra/test_inverse.jl")
+#include("src/LinearAlgebra/test_GaussianEliminationScaledPartialPivoting.jl")
 #include("src/LinearAlgebra/test_GaussianElimination.jl")
 #include("src/ErrorAnalysis/test_RoundOffErrors.jl")
 #include("src/ErrorAnalysis/test_RoundArithmetics.jl")
 #include("src/Integrals/test_CompositeSimpson.jl")
-include("src/RootFinding/test_RootFinding.jl")
+#include("src/RootFinding/test_RootFinding.jl")
 """
 Use this to test all!
 

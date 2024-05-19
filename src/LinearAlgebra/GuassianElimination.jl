@@ -19,7 +19,7 @@ function solve_system(matrix_A::Matrix{Float64}, vector_b::Vector{Float64})
         end
 
         if msg_erro
-            println("Sistemanão admite única solução")
+            println("Sistema não admite única solução")
             return
         end
 
